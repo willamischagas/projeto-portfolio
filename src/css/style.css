@@ -1,0 +1,292 @@
+/* estilo do cabeçalho */
+
+.header{
+    padding: 40px 4%;
+}
+
+.header > .interface{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header a{
+    color: #ffffffa7;
+    text-decoration: none;
+    display: inline-block;
+    transition: .2s;
+}
+.header a:hover{
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.header nav ul{
+    list-style-type: none;
+}
+
+.header nav ul li{
+    display: inline-block;
+    justify-content: space-between;
+    padding: 0 40px;
+}
+
+.btn-contato button{
+    padding: 10px 40px;
+    font-size: 18px;
+    font-weight: 600;
+    background-color: blue;
+    border: 0;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.logo h1{
+   color: #fff;
+}
+
+.header h1 span{
+    color: blue;
+}
+
+button:hover, form .btn-enviar input:hover{
+    box-shadow: 0px 0px 8px #0000ff86;
+    color: #fff;
+    transform: scale(1.05);
+}
+
+.img-topo-site img{
+    width: 250px;
+}
+
+.topo-do-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar{
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+}
+
+/* estilo topo-do-site */
+
+section.topo-do-site{
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-do-site h1{
+    color: #fff;
+    font-size: 42px;
+    line-height: 40px;
+}
+
+.topo-do-site .txt-topo-site h1 span{
+    color: blue;
+}
+
+.topo-do-site .txt-topo-site p{
+    color: #fff;
+    margin: 40px 0px;
+}
+
+/* estilo Especialidades */
+
+.Especialidades{
+    padding: 40px 4%;
+}
+
+.Especialidades .flex{
+    gap: 60px;
+}
+
+h2.titulo{
+    color: #fff;
+    font-size: 37px;
+    text-align: center;
+}
+
+h2.titulo span{
+    color: blue;
+}
+
+.Especialidades .especialidades-box{
+    color: #fff;
+    padding: 40px;
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+
+.Especialidades .especialidades-box:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 8px #ffffffae;
+}
+
+.Especialidades .especialidades-box i{
+    font-size: 70px;
+    color: blue;
+}
+
+.Especialidades .especialidades-box h3{
+    font-size: 28px;
+    margin: 14px 0;
+}
+
+.Especialidades .especialidades-box img{
+    width: 100%;
+}
+
+/* estilo sobre */
+
+.sobre{
+    padding: 60px 4%;
+}
+
+.sobre .flex{
+    align-items: center;
+    gap: 60px;
+}
+
+.sobre .txt-sobre{
+    color: #fff;
+}
+
+.sobre .txt-sobre h2{
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: 30px;
+}
+
+.sobre .txt-sobre h2 span{
+    color: blue;
+    display: block;
+}
+
+.sobre .txt-sobre p{
+    margin: 20px 0;
+    text-align: justify;
+}
+
+.sobre .txt-sobre .btn-social i{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: none;
+    font-size: 30px;
+    cursor: pointer;
+    margin: 0 8px;
+    transition: .2s;
+}
+
+/* estilo projetos */
+
+.Projetos{
+    padding: 80px 4%;
+    box-shadow: 0 0 30px 8px #ffffff39;
+}
+
+.Projetos .flex{
+    justify-content: space-around;
+    margin-top: 60px;
+}
+
+.img-port{
+    width: 360px;
+    height: 460px;
+    background-size: cover;
+    background-position: 100% 0%;
+    color: #fff;
+    transition: 8s;
+    cursor: pointer;
+    border-radius: 40px;
+    position: relative;
+}
+
+.img-port:hover{
+    background-position: 100% 100%;
+}
+
+.projetos-pokemon{
+    background-image: url(../imge/img-1.jpg);
+    
+}
+
+.projetos-arcane{
+    background-image: url(../imge/img-2.jpg);
+    
+}
+
+.projetos-TOP-HAMBURGUERES{
+    background-image: url(../imge/img-3.jpg);
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #000000a8;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 23px;
+    font-weight: 300;
+    color: #fff;
+    opacity: 0;
+    transition: .5s;
+}
+
+.overlay:hover{
+    opacity: 1;
+}
+
+/* estilo footer */
+
+footer{
+    padding: 5% 4%;
+    box-shadow: 0 0 40px 10px solid #ffffff1d;
+}
+
+footer h1{
+    color: #fff;
+    display: flex;
+}
+
+footer h1 span{
+    color: blue;
+}
+
+footer .flex{
+    justify-content: space-between;
+}
+
+footer .line-footer {
+    padding: 20px 0;
+}
+
+footer .line-footer p i{
+    color: blue;
+    font-size: 22px;
+}
+
+footer .line-footer p a{
+    color: #fff;
+}
+
+.borda {
+    border-bottom: 2px solid blue;
+}
